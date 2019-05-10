@@ -20,6 +20,7 @@ class App extends Component {
       .get('http://localhost:3333/smurfs')
       .then(res => {
         this.setState({ smurfs: res.data })
+        console.log(res.data);
       })
       .catch(err => { console.log(err) })
   }
@@ -30,6 +31,7 @@ class App extends Component {
       .then(res => {
         this.setState({ smurfs: res.data })
         this.props.history.push('/');
+        console.log(res.data);
       })
       .catch(err => {console.log(err)})
   }
@@ -40,6 +42,7 @@ class App extends Component {
       .then(res => {
         this.setState({ smurfs: res.data });
         this.props.history.push('/');
+        console.log(res.data);
       })
       .catch(err => console.log(err));
   }
