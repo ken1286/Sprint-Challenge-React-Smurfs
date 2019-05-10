@@ -24,7 +24,6 @@ class App extends Component {
   }
 
   addSmurf = smurf => {
-    console.log(smurf)
     axios
       .post('http://localhost:3333/smurfs', smurf)
       .then(res => {
