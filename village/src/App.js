@@ -41,8 +41,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <SmurfForm addSmurf={this.addSmurf}/>
-        <Smurfs smurfs={this.state.smurfs} />
+        <nav>
+          <NavLink to="/">Smurf List</NavLink>
+          <NavLink to="/smurf-form">Add Smurfs</NavLink>
+        </nav>
 
         <Route 
           exact
