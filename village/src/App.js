@@ -39,7 +39,6 @@ class App extends Component {
       .delete(`http://localhost:3333/smurfs/${id}`)
       .then(res => {
         this.setState({ smurfs: res.data });
-        console.log(res.data);
         this.props.history.push('/');
       })
       .catch(err => console.log(err));
